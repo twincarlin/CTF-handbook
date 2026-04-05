@@ -25,6 +25,6 @@ Each challenge links to its corresponding write‑up or notes.
 | Failure Failure | Medium | 1573 | 100% | Yes | [Failure Failure](./Failure%20Failure.md) |
 | KSECRETS | Medium | 1550 | 91% | Yes | [KSECRETS](./KSECRETS.md) |
 | Printer Shares 3 | Hard | 1095 | 94% | Yes | [Printer Shares 3](./Printer%20Shares%203.md) |
-| Printer Shares 2 | Hard | 976 | 28% | No | [Printer Shares 2](./Printer%20Shares%202.md) |
+| Printer Shares 2 | Hard | 976 | 28% | Yes | [Printer Shares 2](./Printer%20Shares%202.md) |
 
 ---
