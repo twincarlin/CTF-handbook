@@ -51,7 +51,7 @@ Try authenticating as `joe`:
     Password for [WORKGROUP\joe]:
     session setup failed: NT_STATUS_LOGON_FAILURE
 
-Create a small wordlist and brute‑force with a Python script, with no success:
+Create a small wordlist with possible default passwords and brute‑force with a Python script, with no success:
 
     $ python3 bruteforcepassword.py
 
