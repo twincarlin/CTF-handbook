@@ -14,7 +14,7 @@ Browse the categories below to explore the challenges.
 [General Skills](./General%20Skills/README.md)  
 [Forensics](./Forensics/README.md)  
 [Cryptography](./Cryptography/README.md)  
-[Blockchain](./Blockchain/README.md)  
+Blockchain (no challenges)  
 [Binary Exploitation](./Binary%20Exploitation/README.md)
 
 ---
