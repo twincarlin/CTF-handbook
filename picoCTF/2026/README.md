@@ -17,6 +17,6 @@ Browse the categories below to explore the challenges.
 | [Forensics](./Forensics/README.md) | 1/8 |
 | [Cryptography](./Cryptography/README.md) | 7/11 |
 | [Blockchain](./Blockchain/README.md) | 0/4 |
-| [Binary Exploitation](./Binary%20Exploitation/README.md) | 2/8 |
+| [Binary Exploitation](./Binary%20Exploitation/README.md) | 3/8 |
 
 ---
