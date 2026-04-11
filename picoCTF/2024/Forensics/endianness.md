@@ -1,4 +1,4 @@
-# endianness-v2 — picoCTF 2024
+# endianness — picoCTF 2024
 
 Use CyberChef:
 
