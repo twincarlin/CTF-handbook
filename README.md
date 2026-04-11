@@ -12,3 +12,8 @@ You are solely responsible for ensuring that anything you use is safe, appropria
 ## Contributions
 This project is not open for external contributions.  
 Pull requests, issues, and suggestions are currently closed.
+
+## CTFs
+[picoCTF 2024](2024/README.md)  
+[picoCTF 2025](2025/README.md)  
+[picoCTF 2026](2026/README.md)  
