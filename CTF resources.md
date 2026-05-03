@@ -107,3 +107,6 @@ https://www.kali.org/tools/gobuster/
 
 Flask Session Cookie Decoder:  
 https://www.kirsle.net/wizards/flask-session.cgi
+
+Rust playground:
+https://play.rust-lang.org/
