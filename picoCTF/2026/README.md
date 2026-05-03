@@ -14,7 +14,7 @@ Browse the categories below to explore the challenges.
 | [Web Exploitation](./Web%20Exploitation/README.md) | 7/10 |
 | [Reverse Engineering](./Reverse%20Engineering/README.md) | 7/11 |
 | [General Skills](./General%20Skills/README.md) | 17/17 |
-| [Forensics](./Forensics/README.md) | 1/8 |
+| [Forensics](./Forensics/README.md) | 8/8 |
 | [Cryptography](./Cryptography/README.md) | 9/11 |
 | [Blockchain](./Blockchain/README.md) | 0/4 |
 | [Binary Exploitation](./Binary%20Exploitation/README.md) | 4/8 |
