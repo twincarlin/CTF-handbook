@@ -1,7 +1,5 @@
 # Black Cobra Pepper — picoCTF 2026
 
-**Unsolved**
-
 Hints given:
 1. Does this remind you of any other popular encryption?
 2. What purpose does the s-box serve?
@@ -24,8 +22,8 @@ I tried brute force the key with peppers padded with 1's, but did not find it.
 
 Probably I can use the fact that the encoding is a linear and the known pt/ct pair to find pt2 somehow.
 
-Second attempt at brute force combined with the fact that encoding is linear given that s-box does not work properly.  
-This time I brute force possible flag :
+Second attempt at brute force combined with the fact that the encoding is linear given that s-box does not work properly.  
+This time I brute force possible flags:
 * the flag is 16 characters, `picoCTF{???????}`
 * the last character is `!` based on the wording in the challenge description: `(change!)`
 * padding with `1` (not 1337 speak) somewhere inside the word, based on padding in `pt1`
