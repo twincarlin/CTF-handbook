@@ -29,5 +29,7 @@ Used the hints and found an interesting chat file:
     $ icat partition4.img 32716 > chat
     $ cat chat
     NTczNDE3aDEzcl83aDRuXzdoM18xNDU3XzU4NTI3YmIyMjIK
+    $ base64 -d < chat
+    573417h13r_7h4n_7h3_1457_58527bb222
 
-Convert this in Cyberchef (From Base64), recognize this as the part of the flag inside curly brackets.
+Can also be converted in Cyberchef (From Base64), recognize this as the part of the flag inside curly brackets.
