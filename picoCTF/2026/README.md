@@ -12,7 +12,7 @@ Browse the categories below to explore the challenges.
 | Category | Solved |
 |:---------|:-----------|
 | [Web Exploitation](./Web%20Exploitation/README.md) | 7/10 |
-| [Reverse Engineering](./Reverse%20Engineering/README.md) | 7/11 |
+| [Reverse Engineering](./Reverse%20Engineering/README.md) | 8/11 |
 | [General Skills](./General%20Skills/README.md) | 17/17 |
 | [Forensics](./Forensics/README.md) | 8/8 |
 | [Cryptography](./Cryptography/README.md) | 9/11 |
