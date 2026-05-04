@@ -108,5 +108,9 @@ https://www.kali.org/tools/gobuster/
 Flask Session Cookie Decoder:  
 https://www.kirsle.net/wizards/flask-session.cgi
 
-Rust playground:
+Rust playground:  
 https://play.rust-lang.org/
+
+Decompiler Explorer:  
+https://dogbolt.org/  
+It is an interactive online decompiler which shows equivalent C-like output of decompiled programs from many popular decompilers.
