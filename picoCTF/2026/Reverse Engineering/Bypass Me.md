@@ -91,3 +91,15 @@ The result is:
     SuperSecure
 
 This is the required password.
+
+Alternatively, we can see the password by setting a breakpoint and run the program:
+
+        (gdb) disass decode_password
+        0x00000000000013a2 <+111>:   mov    -0x28(%rbp),%rax
+        0x00000000000013a6 <+115>:   add    $0xb,%rax
+        0x00000000000013aa <+119>:   movb   $0x0,(%rax)
+        0x00000000000013ad <+122>:   nop
+        (gdb) break *decode_password+122
+        Breakpoint 1 at 0x13ad: file /home/ctf-player/bypassme.c, line 22.
+        (gdb) run
+        Breakpoint 1, decode_password (out=0x7ffd04c02590 "SuperSecure") at /home/ctf-player/bypassme.c:22
